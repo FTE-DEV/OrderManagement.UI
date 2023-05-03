@@ -1,0 +1,19 @@
+.nav-item
+{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.nav-icon
+{
+    margin-right: 10px;
+}
+
+.nav-span
+{
+    color: #636363;
+    padding-left: 70px;
+    display: flex;
+    justify-content: left;
+    align-content: center;
+}
