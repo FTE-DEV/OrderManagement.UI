@@ -6,9 +6,12 @@
         <app-nav-list/>
     </mat-drawer>
     <mat-drawer-content>
-        <mat-toolbar color="primary">
+        <mat-toolbar class="toolbar-fixed" color="primary">
             <span>Title</span>
         </mat-toolbar>
+        <div class="content">
+            <router-outlet></router-outlet>
+        </div>
         
     </mat-drawer-content>
   </mat-drawer-container>

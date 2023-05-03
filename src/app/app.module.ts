@@ -6,11 +6,19 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import {MatButtonModule} from '@angular/material/button'; 
 import {MatIconModule} from '@angular/material/icon'; 
+import {MatCardModule} from '@angular/material/card';
 
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavListComponent } from './components/nav-list/nav-list.component';
+import { AppRoutingModule } from './app-routing.module';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { CustomersComponent } from './components/customers/customers.component';
+import { ItemsComponent } from './components/items/items.component';
+import { ItemgroupsComponent } from './components/itemgroups/itemgroups.component';
+import { OrdersComponent } from './components/orders/orders.component';
+import { InvoicesComponent } from './components/invoices/invoices.component';
 
 
 
@@ -18,7 +26,13 @@ import { NavListComponent } from './components/nav-list/nav-list.component';
 @NgModule({
   declarations: [
     AppComponent,
-    NavListComponent
+    NavListComponent,
+    DashboardComponent,
+    CustomersComponent,
+    ItemsComponent,
+    ItemgroupsComponent,
+    OrdersComponent,
+    InvoicesComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +41,9 @@ import { NavListComponent } from './components/nav-list/nav-list.component';
     MatSidenavModule,
     MatListModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatCardModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
