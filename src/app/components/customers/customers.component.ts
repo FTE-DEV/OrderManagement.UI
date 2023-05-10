@@ -9,13 +9,13 @@ import { CustomersService } from 'src/app/services/customers-service.service';
 })
 export class CustomersComponent {
   customers : Customer[] = []
-  customersColumns: string[] = ['id', 'name', 'site', 'email'];
+  customersColumns: string[] = ['id', 'name', 'site', 'email', 'edit'];
   constructor(private customersService:CustomersService){}
 
   ngOnInit()
   {
     this.customersService.getCustomers().subscribe((data:any) => {
-      this.customers = data.content
+      this.customers = data
     })
 
     

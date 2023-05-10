@@ -1,5 +1,7 @@
 import { Component, OnInit, isDevMode } from '@angular/core';
 import { environment } from 'src/environment/environment';
+import { Title } from '@angular/platform-browser';
+import { NavigationEnd, Router } from '@angular/router';
 
 
 @Component({
@@ -8,9 +10,13 @@ import { environment } from 'src/environment/environment';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'OrderManagement';
+  title = '';
+
+  constructor (private titleSerivce: Title, private router: Router  ) {}
 
   ngOnInit() {
+
+    this.title = this.titleSerivce.getTitle()
     if (isDevMode()) {
       console.log('Development!');
     } else {

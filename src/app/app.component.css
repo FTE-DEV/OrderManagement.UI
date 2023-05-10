@@ -3,6 +3,7 @@
 .toolbar-fixed
 {
     position: fixed;
+    z-index: 500;
 }
 
 .content
