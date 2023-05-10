@@ -8,7 +8,7 @@ import { Component, Input } from '@angular/core';
 export class ToolbarComponent {
 
   
-  @Input() routePath : any;
+  @Input() routePath : string;
 
 
 }
