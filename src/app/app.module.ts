@@ -29,6 +29,7 @@ import { OrdersComponent } from './components/orders/orders.component';
 import { InvoicesComponent } from './components/invoices/invoices.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { CustomerComponent } from './components/customers/customer/customer.component';
+import { FormSectionHeaderComponent } from './components/form-section-header/form-section-header.component';
 
 
 
@@ -44,7 +45,8 @@ import { CustomerComponent } from './components/customers/customer/customer.comp
     OrdersComponent,
     InvoicesComponent,
     ToolbarComponent,
-    CustomerComponent
+    CustomerComponent,
+    FormSectionHeaderComponent
   ],
   imports: [
     BrowserModule,
