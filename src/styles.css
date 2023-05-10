@@ -12,13 +12,24 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     padding: 0px;
     display: flex;
     align-content: center;
+    justify-content: center;
     margin-top: 20px;
     margin-bottom: 20px;
     
 }
 
+
 .formContent
 {
     padding: 5px;
     width: 100%;
+}
+
+.formRowSection
+{
+    display: flex;
+    justify-content: left;
+    align-content: center;
+    width: 50%;
+
 }
