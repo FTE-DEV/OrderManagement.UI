@@ -11,6 +11,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatTableModule} from '@angular/material/table';
 import {MatFormFieldModule, MatLabel} from '@angular/material/form-field'; 
 import {MatInputModule} from '@angular/material/input'; 
+import {MatDividerModule} from '@angular/material/divider';
 
 
 import { FlexModule } from '@angular/flex-layout';
@@ -60,6 +61,7 @@ import { CustomerComponent } from './components/customers/customer/customer.comp
     MatInputModule,
     MatFormFieldModule,
     FlexModule,
+    MatDividerModule
 
   ],
   providers: [],

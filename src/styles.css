@@ -9,8 +9,16 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .formRow
 {
     width: 100%;
-    padding: 20px;
+    padding: 0px;
     display: flex;
     align-content: center;
-    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.formContent
+{
+    padding: 5px;
+    width: 100%;
 }

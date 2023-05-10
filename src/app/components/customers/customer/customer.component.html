@@ -1,15 +1,55 @@
 <mat-card>
     <mat-card-content>
-        <div class="formRow"></div>
+        <h2>General Information</h2>
+        <mat-divider></mat-divider>
         <div class="formRow">
-            <mat-form-field appearance="outline" class="formRow">
+            <mat-form-field appearance="outline" class="formContent inputId">
                 <mat-label>ID</mat-label>
-                <input matInput type="text" value={{customer.id}}>
+                <input matInput type="text"  value={{customer.id}}>
             </mat-form-field>
-            <mat-form-field appearance="outline" class="formRow">
+        </div>
+        <div class="formRow">
+            <mat-form-field appearance="outline" class="formContent">
                 <mat-label>Name</mat-label>
                 <input matInput type="text" value={{customer.name}}>
             </mat-form-field>
+
+            <mat-form-field appearance="outline" class="formContent">
+                <mat-label>E-Mail</mat-label>
+                <input matInput type="text" value={{customer.email}}>
+            </mat-form-field>
+        </div>
+        <div class="formRow">
+            <mat-form-field appearance="outline" class="formContent">
+                <mat-label>Site</mat-label>
+                <input matInput type="text" value={{customer.site}}>
+            </mat-form-field>
+        </div>
+        <h2>Address Information</h2>
+        <mat-divider></mat-divider>
+        <div class="formRow">
+            <mat-form-field appearance="outline" class="formContent">
+                <mat-label>Street</mat-label>
+                <input matInput type="text" value={{customer.street}}>
+            </mat-form-field>
+        </div>
+        
+        <div class="formRow">
+            <mat-form-field appearance="outline" class="formContent">
+                <mat-label>Postal Code</mat-label>
+                <input matInput type="text" value={{customer.postalCode}}>
+            </mat-form-field>
+            <mat-form-field appearance="outline" class="formContent">
+                <mat-label>City</mat-label>
+                <input matInput type="text" value={{customer.city}}>
+            </mat-form-field>
         </div>
     </mat-card-content>
+    <mat-card-actions>
+        <div class="formRow">
+            <button mat-raised-button color="primary">Save</button>
+            <button mat-raised-button color="accent">Cancel</button>
+            <button mat-stroked-button color="warn">Delete</button>
+        </div>
+    </mat-card-actions>
 </mat-card>
