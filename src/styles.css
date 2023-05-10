@@ -4,3 +4,13 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.formRow
+{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}

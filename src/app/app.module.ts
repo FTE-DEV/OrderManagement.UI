@@ -9,6 +9,11 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon'; 
 import {MatCardModule} from '@angular/material/card';
 import {MatTableModule} from '@angular/material/table';
+import {MatFormFieldModule, MatLabel} from '@angular/material/form-field'; 
+import {MatInputModule} from '@angular/material/input'; 
+
+
+import { FlexModule } from '@angular/flex-layout';
 
 
 import { AppComponent } from './app.component';
@@ -51,7 +56,11 @@ import { CustomerComponent } from './components/customers/customer/customer.comp
     MatCardModule,
     AppRoutingModule,
     HttpClientModule,
-    MatTableModule
+    MatTableModule,
+    MatInputModule,
+    MatFormFieldModule,
+    FlexModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

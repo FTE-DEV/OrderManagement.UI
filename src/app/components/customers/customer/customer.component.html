@@ -1,1 +1,15 @@
-<p>customer works!</p>
+<mat-card>
+    <mat-card-content>
+        <div class="formRow"></div>
+        <div class="formRow">
+            <mat-form-field appearance="outline" class="formRow">
+                <mat-label>ID</mat-label>
+                <input matInput type="text" value={{customer.id}}>
+            </mat-form-field>
+            <mat-form-field appearance="outline" class="formRow">
+                <mat-label>Name</mat-label>
+                <input matInput type="text" value={{customer.name}}>
+            </mat-form-field>
+        </div>
+    </mat-card-content>
+</mat-card>

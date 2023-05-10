@@ -18,4 +18,10 @@ export class CustomersService {
     let res = this.httpClient.get<Customer[]>(this.uri)
     return res;
   }
+
+  getCustomer(id:number) : Observable<Customer[]>
+  {
+    let res = this.httpClient.get<Customer[]>(this.uri+'/'+id)
+    return res;
+  }
 }
