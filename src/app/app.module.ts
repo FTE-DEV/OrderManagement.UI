@@ -22,6 +22,7 @@ import { ItemgroupsComponent } from './components/itemgroups/itemgroups.componen
 import { OrdersComponent } from './components/orders/orders.component';
 import { InvoicesComponent } from './components/invoices/invoices.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import { CustomerComponent } from './components/customers/customer/customer.component';
 
 
 
@@ -36,7 +37,8 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
     ItemgroupsComponent,
     OrdersComponent,
     InvoicesComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    CustomerComponent
   ],
   imports: [
     BrowserModule,
