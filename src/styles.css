@@ -38,3 +38,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     margin-right: 10px;
     
 }
+
+.contentCard
+{
+    padding: 40px 30px;
+}
