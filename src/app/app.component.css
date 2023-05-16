@@ -3,6 +3,7 @@
 .toolbar-fixed
 {
     position: fixed;
+    z-index: 500;
 }
 
 .content
@@ -10,5 +11,5 @@
     width: 90%;
     margin: auto;
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }

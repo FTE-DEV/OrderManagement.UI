@@ -1,0 +1,67 @@
+<mat-card class="contentCard">
+    <form onsubmit="">
+        <mat-card-content>
+            
+            <app-form-section-header [sectionTitle]="'General Information'" />
+            <div class="formRow">
+                <div class="formRowSection">
+                    <mat-form-field appearance="outline" class="formContent inputId">
+                        <mat-label>ID</mat-label>
+                        <input matInput type="text"  value={{customer.id}}>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="formRow">
+                <div class="formRowSection">
+                    <mat-form-field appearance="outline" class="formContent">
+                        <mat-label>Name</mat-label>
+                        <input matInput type="text" value={{customer.name}}>
+                    </mat-form-field>
+        
+                    <mat-form-field appearance="outline" class="formContent">
+                        <mat-label>E-Mail</mat-label>
+                        <input matInput type="text" value={{customer.email}}>
+                    </mat-form-field>  
+                </div>
+            </div>
+            <div class="formRow">
+                <div class="formRowSection">
+                    <mat-form-field appearance="outline" class="formContent">
+                        <mat-label>Site</mat-label>
+                        <input matInput type="text" value={{customer.site}}>
+                    </mat-form-field>
+                </div>
+            </div>
+            <app-form-section-header [sectionTitle]="'Address Information'" />
+            <div class="formRow">
+                <div class="formRowSection">
+                    <mat-form-field appearance="outline" class="formContent">
+                        <mat-label>Street</mat-label>
+                        <input matInput type="text" value={{customer.street}}>
+                    </mat-form-field>
+                </div>
+            </div>
+            
+            <div class="formRow">
+                <div class="formRowSection">
+                    <mat-form-field appearance="outline" class="formContent inputPostalCode">
+                        <mat-label>Postal Code</mat-label>
+                        <input matInput type="text" value={{customer.postalCode}}>
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="formContent">
+                        <mat-label>City</mat-label>
+                        <input matInput type="text" value={{customer.city}}>
+                    </mat-form-field>
+                </div>  
+            </div>
+        </mat-card-content>
+        <app-form-section-header></app-form-section-header>
+        <mat-card-actions>
+            <div class="formRow">
+                <button mat-raised-button class="formButton" color="primary">Save</button>
+                <button mat-raised-button class="formButton" color="accent">Cancel</button>
+                <button mat-stroked-button class="formButton" color="warn">Delete</button>
+            </div>
+        </mat-card-actions>
+    </form>
+</mat-card>

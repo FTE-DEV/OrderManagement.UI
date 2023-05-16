@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import {MatToolbarModule} from '@angular/material/toolbar'; 
 import {MatSidenavModule} from '@angular/material/sidenav';
@@ -7,6 +8,13 @@ import {MatListModule} from '@angular/material/list';
 import {MatButtonModule} from '@angular/material/button'; 
 import {MatIconModule} from '@angular/material/icon'; 
 import {MatCardModule} from '@angular/material/card';
+import {MatTableModule} from '@angular/material/table';
+import {MatFormFieldModule, MatLabel} from '@angular/material/form-field'; 
+import {MatInputModule} from '@angular/material/input'; 
+import {MatDividerModule} from '@angular/material/divider';
+
+
+import { FlexModule } from '@angular/flex-layout';
 
 
 import { AppComponent } from './app.component';
@@ -19,6 +27,9 @@ import { ItemsComponent } from './components/items/items.component';
 import { ItemgroupsComponent } from './components/itemgroups/itemgroups.component';
 import { OrdersComponent } from './components/orders/orders.component';
 import { InvoicesComponent } from './components/invoices/invoices.component';
+import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import { CustomerComponent } from './components/customers/customer/customer.component';
+import { FormSectionHeaderComponent } from './components/form-section-header/form-section-header.component';
 
 
 
@@ -32,7 +43,10 @@ import { InvoicesComponent } from './components/invoices/invoices.component';
     ItemsComponent,
     ItemgroupsComponent,
     OrdersComponent,
-    InvoicesComponent
+    InvoicesComponent,
+    ToolbarComponent,
+    CustomerComponent,
+    FormSectionHeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +57,14 @@ import { InvoicesComponent } from './components/invoices/invoices.component';
     MatButtonModule,
     MatIconModule,
     MatCardModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    MatTableModule,
+    MatInputModule,
+    MatFormFieldModule,
+    FlexModule,
+    MatDividerModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
