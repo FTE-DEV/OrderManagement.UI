@@ -1,0 +1,20 @@
+.toolbar-container
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.toolbar-content-left
+{
+    justify-self: flex-start;
+}
+
+
+.toolbar-content-right
+{
+    justify-self: flex-end;
+}

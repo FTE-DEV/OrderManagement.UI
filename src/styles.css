@@ -1,4 +1,45 @@
-/* You can add global styles to this file, and also import other style files */
+
+
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.formRow
+{
+    width: 100%;
+    padding: 0px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+
+.formContent
+{
+    padding: 5px;
+    width: 100%;
+}
+
+.formRowSection
+{
+    display: flex;
+    justify-content: left;
+    align-content: center;
+    width: 50%;
+
+}
+
+.formButton
+{
+    width: 150px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+.contentCard
+{
+    padding: 40px 30px;
+}
